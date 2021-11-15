@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">OnlineShop</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="text_onlineshop">Спасибо за то что выбрали OnlineShop, будьте с нами и вы найдете вам нужный товар</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_in_with_underline"><u>Войти</u></string>
+    <string name="phone_number">Телефон номер</string>
+    <string name="password">Пароль</string>
+    <string name="remember_me">Запомнить меня</string>
+    <string name="do_you_have_account">У вас нет аккаунта?</string>
+    <string name="create_account">Создать аккаунт</string>
+    <string name="did_you_forgot_password">Забыли пароль?</string>
+    <string name="input_your_number">Пожалуйства, введите телефон номер!</string>
+    <string name="input_your_password">Пожалуйста, введите пароль!</string>
+    <string name="onlineshop">OnlineShop</string>
+    <string name="you_can_find_something">Вы найдете тут все что хотели купить</string>
+    <string name="or">Или</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="name">Ф. И. О.</string>
+    <string name="registration">Регистрация</string>
+    <string name="sign_in_if_you_have_account">Войдите если у вас есть аккаунт.</string>
+    <string name="after_reg_you_receive_sms">После регистраций вам придет сообщение на ваш номер</string>
+    <string name="do_with_shop">Делайте покупку с OnlineShop</string>
+    <string name="input_your_name">Пожалуйста, введите имя!</string>
+</resources>
