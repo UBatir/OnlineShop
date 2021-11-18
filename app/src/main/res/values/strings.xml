@@ -22,4 +22,10 @@
     <string name="after_reg_you_receive_sms">После регистраций вам придет сообщение на ваш номер</string>
     <string name="do_with_shop">Делайте покупку с OnlineShop</string>
     <string name="input_your_name">Пожалуйста, введите имя!</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_title">Varat Singh Sh</string>
+    <string name="nav_header_subtitle">+998 91 398 21 65</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="basket">Корзина</string>
 </resources>

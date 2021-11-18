@@ -19,6 +19,8 @@ class PopularFragment:Fragment(R.layout.fragment_popular) {
         binding.apply {
             recyclerView.adapter=adapter
         }
-        adapter.models= listOf(Product("Куртка", "400000сум"), Product("Джинсы","123400сум"),Product("Джинсы","123400сум"),Product("Куртка", "400000сум"))
+        adapter.models= listOf(Product("Куртка", "400000сум",false), Product("Джинсы","123400сум",true),Product("Джинсы","123400сум",true),Product("Куртка", "400000сум",false),
+        Product("Куртка", "400000сум",false), Product("Джинсы","123400сум",false),Product("Джинсы","123400сум",false),Product("Куртка", "400000сум",false),
+        Product("Куртка", "400000сум",false), Product("Джинсы","123400сум",false),Product("Джинсы","123400сум",true),Product("Куртка", "400000сум",false))
     }
 }

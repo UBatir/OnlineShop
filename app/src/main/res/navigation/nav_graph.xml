@@ -7,11 +7,15 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="uz.example.onlineshop.ui.main.MainFragment"
-        android:label="MainFragment" />
+        android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainFragment_to_basketFragment"
+            app:destination="@id/basketFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="uz.example.onlineshop.ui.LoginFragment"
-        android:label="LoginFragment" >
+        android:label="LoginFragment">
         <action
             android:id="@+id/action_loginFragment_to_registrationFragment"
             app:destination="@id/registrationFragment" />
@@ -41,4 +45,8 @@
             android:id="@+id/action_registrationFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="uz.example.onlineshop.ui.basket.BasketFragment"
+        android:label="BasketFragment" />
 </navigation>

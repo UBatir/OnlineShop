@@ -4,6 +4,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import uz.example.onlineshop.R
 import uz.example.onlineshop.core.extentions.inflate
+import uz.example.onlineshop.core.extentions.onClick
 import uz.example.onlineshop.data.remote.Product
 import uz.example.onlineshop.databinding.ItemProductBinding
 
@@ -15,11 +16,29 @@ class PopularAdapter:RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
         notifyDataSetChanged()
     }
 
+    private var clickItemFavorite:()->Unit={}
+    fun onClickItemFavorite(clickItem:()->Unit){
+        this.clickItemFavorite=clickItem
+    }
+
     inner class PopularViewHolder(private val binding: ItemProductBinding):RecyclerView.ViewHolder(binding.root){
         fun populateModel(model:Product){
             binding.apply {
                 tvTitle.text=model.name
                 tvPrice.text=model.price
+                if (model.isFav) iconFav.setBackgroundResource(R.drawable.ic_fav_icon)
+                else iconFav.setBackgroundResource(R.drawable.ic_favorite)
+                binding.iconFav.onClick {
+                    clickItemFavorite.invoke()
+                    if(model.isFav) {
+                        model.isFav=false
+                        iconFav.setBackgroundResource(R.drawable.ic_favorite)
+                    }
+                    else{
+                        model.isFav=true
+                        iconFav.setBackgroundResource(R.drawable.ic_fav_icon)
+                    }
+                }
             }
         }
     }
