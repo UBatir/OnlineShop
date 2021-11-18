@@ -4,6 +4,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import uz.example.onlineshop.R
 import uz.example.onlineshop.core.extentions.inflate
+import uz.example.onlineshop.core.extentions.onClick
 import uz.example.onlineshop.data.remote.Product
 import uz.example.onlineshop.databinding.ItemBasketBinding
 
@@ -20,6 +21,8 @@ class BasketAdapter:RecyclerView.Adapter<BasketAdapter.BasketViewHolder>() {
             binding.apply {
                 tvTitle.text=model.name
                 tvPrice.text=model.price
+                btnPlus.onClick {
+                }
             }
         }
     }

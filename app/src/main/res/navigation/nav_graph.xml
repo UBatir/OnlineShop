@@ -11,6 +11,12 @@
         <action
             android:id="@+id/action_mainFragment_to_basketFragment"
             app:destination="@id/basketFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -49,4 +55,12 @@
         android:id="@+id/basketFragment"
         android:name="uz.example.onlineshop.ui.basket.BasketFragment"
         android:label="BasketFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="uz.example.onlineshop.ui.search.SearchFragment"
+        android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="uz.example.onlineshop.ui.favorite.FavoriteFragment"
+        android:label="FavoriteFragment" />
 </navigation>

@@ -12,7 +12,7 @@ import uz.example.onlineshop.ui.main.popular.PopularAdapter
 class CategoryFragment:Fragment(R.layout.fragment_category) {
 
     private lateinit var binding: FragmentCategoryBinding
-    private val adapter: PopularAdapter by inject()
+    private val adapter: CategoryAdapter by inject()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -21,7 +21,8 @@ class CategoryFragment:Fragment(R.layout.fragment_category) {
             recyclerView.adapter=adapter
         }
         adapter.models= listOf(
-            Product("Куртка", "400000сум",false), Product("Джинсы","123400сум",true),
+            Product("Куртка", "400000сум",false),
+            Product("Джинсы","123400сум",true),
             Product("Джинсы","123400сум",false),
             Product("Куртка", "400000сум",false)
         )
