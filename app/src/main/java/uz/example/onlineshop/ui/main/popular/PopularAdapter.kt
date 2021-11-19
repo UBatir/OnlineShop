@@ -45,7 +45,7 @@ class PopularAdapter:RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
                     }
                 }
             }
-            binding.root.onClick {
+            binding.cardView.onClick {
                 clickItem.invoke(model)
             }
         }
