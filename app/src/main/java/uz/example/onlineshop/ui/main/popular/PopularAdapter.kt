@@ -17,8 +17,13 @@ class PopularAdapter:RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
     }
 
     private var clickItemFavorite:()->Unit={}
-    fun onClickItemFavorite(clickItem:()->Unit){
-        this.clickItemFavorite=clickItem
+    fun onClickItemFavorite(clickItem:()->Unit) {
+        this.clickItemFavorite = clickItem
+    }
+
+    private var clickItem:(product:Product)->Unit={}
+    fun onClickItem(clickItem:(product:Product)->Unit){
+        this.clickItem=clickItem
     }
 
     inner class PopularViewHolder(private val binding: ItemProductBinding):RecyclerView.ViewHolder(binding.root){
@@ -39,6 +44,9 @@ class PopularAdapter:RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
                         iconFav.setBackgroundResource(R.drawable.ic_fav_icon)
                     }
                 }
+            }
+            binding.root.onClick {
+                clickItem.invoke(model)
             }
         }
     }

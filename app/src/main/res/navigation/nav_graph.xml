@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/mainFragment">
 
@@ -11,6 +12,9 @@
         <action
             android:id="@+id/action_mainFragment_to_basketFragment"
             app:destination="@id/basketFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -49,4 +53,13 @@
         android:id="@+id/basketFragment"
         android:name="uz.example.onlineshop.ui.basket.BasketFragment"
         android:label="BasketFragment" />
+    <fragment
+        android:id="@+id/detailFragment"
+        tools:layout="@layout/fragment_detail"
+        android:name="uz.example.onlineshop.ui.detail.DetailFragment"
+        android:label="DetailFragment" >
+        <argument
+            android:name="product"
+            app:argType="string" />
+    </fragment>
 </navigation>

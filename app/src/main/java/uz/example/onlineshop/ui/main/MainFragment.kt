@@ -9,8 +9,10 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupWithNavController
+import org.koin.android.ext.android.inject
 import uz.example.onlineshop.R
 import uz.example.onlineshop.databinding.FragmentMainBinding
+import uz.example.onlineshop.ui.main.popular.PopularAdapter
 
 
 class MainFragment : Fragment(R.layout.fragment_main) {
@@ -19,6 +21,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var navController: NavController
     private lateinit var mNavController: NavController
+    private val adapter: PopularAdapter by inject()
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
