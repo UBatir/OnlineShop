@@ -43,9 +43,11 @@ class MainFragment : Fragment(R.layout.fragment_main) {
             appBarMain.toolbar.setOnMenuItemClickListener {menuItem ->
                 when(menuItem.itemId){
                     R.id.search -> {
+                        mNavController.navigate(MainFragmentDirections.actionMainFragmentToSearchFragment())
                         true
                     }
                     R.id.favorite->{
+                        mNavController.navigate(MainFragmentDirections.actionMainFragmentToFavoriteFragment())
                         true
                     }
                     R.id.basket->{

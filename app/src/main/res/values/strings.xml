@@ -28,4 +28,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="basket">Корзина</string>
+    <string name="search">Поиск</string>
+    <string name="favorite">Избранные</string>
+    <string name="add_all_in_basket">Добавить все в корзину</string>
 </resources>

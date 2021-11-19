@@ -1,4 +1,4 @@
-package uz.example.onlineshop.ui.main.popular
+package uz.example.onlineshop.ui.search
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -8,7 +8,7 @@ import uz.example.onlineshop.core.extentions.onClick
 import uz.example.onlineshop.data.remote.Product
 import uz.example.onlineshop.databinding.ItemProductBinding
 
-class PopularAdapter:RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
+class SearchAdapter:RecyclerView.Adapter<SearchAdapter.SearchViewHolder>() {
 
     var models:List<Product> = listOf()
     set(value) {
@@ -17,16 +17,11 @@ class PopularAdapter:RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
     }
 
     private var clickItemFavorite:()->Unit={}
-    fun onClickItemFavorite(clickItem:()->Unit) {
-        this.clickItemFavorite = clickItem
+    fun onClickItemFavorite(clickItem:()->Unit){
+        this.clickItemFavorite=clickItem
     }
 
-    private var clickItem:(product:Product)->Unit={}
-    fun onClickItem(clickItem:(product:Product)->Unit){
-        this.clickItem=clickItem
-    }
-
-    inner class PopularViewHolder(private val binding: ItemProductBinding):RecyclerView.ViewHolder(binding.root){
+    inner class SearchViewHolder(private val binding:ItemProductBinding):RecyclerView.ViewHolder(binding.root){
         fun populateModel(model:Product){
             binding.apply {
                 tvTitle.text=model.name
@@ -45,23 +40,18 @@ class PopularAdapter:RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
                     }
                 }
             }
-            binding.root.onClick {
-                clickItem.invoke(model)
-            }
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PopularViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SearchViewHolder {
         val itemView=parent.inflate(R.layout.item_product)
         val binding=ItemProductBinding.bind(itemView)
-        return PopularViewHolder(binding)
+        return SearchViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: PopularViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: SearchViewHolder, position: Int) {
         holder.populateModel(models[position])
     }
 
     override fun getItemCount()=models.size
-
-
 }

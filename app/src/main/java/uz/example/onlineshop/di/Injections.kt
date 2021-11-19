@@ -9,8 +9,10 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import uz.example.onlineshop.data.remote.ApiInterface
 import uz.example.onlineshop.ui.basket.BasketAdapter
+import uz.example.onlineshop.ui.main.category.CategoryAdapter
 import uz.example.onlineshop.ui.main.category.CategoryFragment
 import uz.example.onlineshop.ui.main.popular.PopularAdapter
+import uz.example.onlineshop.ui.search.SearchAdapter
 import java.util.concurrent.TimeUnit
 
 object C {
@@ -61,7 +63,8 @@ val remoteModule = module {
 
 val adapterModule = module {
     single { PopularAdapter() }
-    single {  }
+    single { CategoryAdapter() }
+    single { SearchAdapter() }
     single { BasketAdapter() }
 }
 

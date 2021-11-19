@@ -15,15 +15,20 @@
         app:cardElevation="10dp"
         android:layout_margin="8dp"
         android:foreground="?android:attr/selectableItemBackground"
-        android:backgroundTint="#F1F4FB">
+        android:clickable="true"
+        android:backgroundTint="#F1F4FB"
+        android:focusable="true">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iconFav"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ic_favorite"
+            android:src="@drawable/ic_favorite"
             android:layout_gravity="end|top"
-            android:layout_margin="8dp"/>
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_margin="8dp"
+            android:focusable="true" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
