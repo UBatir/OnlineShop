@@ -3,16 +3,12 @@ package uz.example.onlineshop.ui.main.popular
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.google.gson.GsonBuilder
 import org.koin.android.ext.android.inject
 import uz.example.onlineshop.R
 import uz.example.onlineshop.data.remote.Product
 import uz.example.onlineshop.databinding.FragmentPopularBinding
-import uz.example.onlineshop.ui.main.MainFragment
 import uz.example.onlineshop.ui.main.MainFragmentDirections
 
 

@@ -45,19 +45,20 @@
         app:layout_constraintTop_toBottomOf="@id/tvTitle"
         app:layout_constraintBottom_toTopOf="@id/btnOrder"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
+        android:layout_width="354dp"
         android:id="@+id/btnOrder"
-        android:text="Заказать"
-        android:textColor="@color/white"
-        android:textSize="11sp"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@drawable/background_button_sign_in" />
+        android:layout_margin="16dp"
+        android:gravity="start|center"
+        android:paddingLeft="80dp"
+        android:textSize="14sp"
+        android:text="Заказать"
+        android:background="@drawable/background_button_sign_in"
+        android:drawableLeft="@drawable/ic_buy_icon"
+        android:layout_height="54dp"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

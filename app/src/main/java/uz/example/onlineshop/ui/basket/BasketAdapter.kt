@@ -16,15 +16,23 @@ class BasketAdapter:RecyclerView.Adapter<BasketAdapter.BasketViewHolder>() {
         notifyDataSetChanged()
     }
 
+    private var clickItem:(product:Product)->Unit={}
+    fun onClickItem(clickItem:(product:Product)->Unit){
+        this.clickItem=clickItem
+    }
+
     inner class BasketViewHolder(private val binding:ItemBasketBinding):RecyclerView.ViewHolder(binding.root){
         fun populateModel(model:Product){
             binding.apply {
                 tvTitle.text=model.name
                 tvPrice.text=model.price
-                btnPlus.onClick {
-                }
+            }
+
+            binding.root.onClick {
+                clickItem.invoke(model)
             }
         }
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BasketViewHolder {
