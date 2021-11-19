@@ -9,6 +9,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import uz.example.onlineshop.data.remote.ApiInterface
 import uz.example.onlineshop.ui.basket.BasketAdapter
+import uz.example.onlineshop.ui.favorite.FavoriteAdapter
 import uz.example.onlineshop.ui.main.category.CategoryAdapter
 import uz.example.onlineshop.ui.main.category.CategoryFragment
 import uz.example.onlineshop.ui.main.popular.PopularAdapter
@@ -66,6 +67,8 @@ val adapterModule = module {
     single { CategoryAdapter() }
     single { SearchAdapter() }
     single { BasketAdapter() }
+    single { FavoriteAdapter() }
+
 }
 
 val viewModelModule = module {
