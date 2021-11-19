@@ -2,10 +2,12 @@ package uz.example.onlineshop.ui.main
 
 import android.os.Bundle
 import android.view.*
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupWithNavController
@@ -60,7 +62,52 @@ class MainFragment : Fragment(R.layout.fragment_main) {
                     else-> false
                 }
             }
+           navView.menu.findItem(R.id.payment_method).setOnMenuItemClickListener { menuItem ->
+                if (menuItem.itemId==R.id.payment_method){
+                    findNavController().navigate(MainFragmentDirections.actionMainFragmentToCardFragment())
+                }
+                true
+            }
+            navView.menu.findItem(R.id.delivery_address).setOnMenuItemClickListener { menuItem ->
+                if (menuItem.itemId==R.id.delivery_address){
+                    Toast.makeText(requireContext(), "address", Toast.LENGTH_SHORT).show()
+                }
+                true
+            }
+            navView.menu.findItem(R.id.notification).setOnMenuItemClickListener { menuItem ->
+                if (menuItem.itemId==R.id.notification){
+                    Toast.makeText(requireContext(), "notification", Toast.LENGTH_SHORT).show()
+                }
+                true
+            }
+
+            navView.menu.findItem(R.id.about).setOnMenuItemClickListener { menuItem ->
+                if (menuItem.itemId==R.id.about){
+                    Toast.makeText(requireContext(), "about", Toast.LENGTH_SHORT).show()
+                }
+                true
+            }
+
+            navView.menu.findItem(R.id.settings).setOnMenuItemClickListener { menuItem ->
+                if (menuItem.itemId==R.id.settings){
+                    Toast.makeText(requireContext(), "settings", Toast.LENGTH_SHORT).show()
+                }
+                true
+            }
+
+            navView.menu.findItem(R.id.exit).setOnMenuItemClickListener { menuItem ->
+                if (menuItem.itemId==R.id.exit){
+                    Toast.makeText(requireContext(), "exit", Toast.LENGTH_SHORT).show()
+                }
+                true
+            }
+
+            navView.menu.findItem(R.id.reference).setOnMenuItemClickListener { menuItem ->
+                if (menuItem.itemId==R.id.reference){
+                    Toast.makeText(requireContext(), "reference", Toast.LENGTH_SHORT).show()
+                }
+                true
+            }
         }
     }
-
 }

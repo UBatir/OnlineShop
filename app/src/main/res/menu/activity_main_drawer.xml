@@ -11,9 +11,6 @@
             android:id="@+id/orderFragment"
             android:title="Заказы" />
         <item
-            android:id="@+id/favorite"
-            android:title="Избранные" />
-        <item
             android:id="@+id/delivery_address"
             android:title="Адрес доставки" />
         <item

@@ -108,7 +108,7 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/tvTitle"
         app:lottie_rawRes="@raw/success"
-        app:lottie_autoPlay="false"
+        app:lottie_autoPlay="true"
         app:lottie_loop="true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
