@@ -38,4 +38,13 @@
     <string name="card_number">Номер карты</string>
     <string name="shelf_life">Срок</string>
     <string name="continue_order">Продолжить покупку</string>
+    <string name="main">Главный</string>
+    <string name="order">Заказы</string>
+    <string name="delivery_address">Адрес доставки</string>
+    <string name="payment">Способ оплаты</string>
+    <string name="notifications">Увеомление</string>
+    <string name="help">Справка</string>
+    <string name="about">О нас</string>
+    <string name="settings">Настройки</string>
+    <string name="exit">Выход</string>
 </resources>

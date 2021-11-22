@@ -5,31 +5,22 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:title="Главный"
+            android:title="@string/main"
             android:id="@+id/productFragment" />
         <item
             android:id="@+id/orderFragment"
-            android:title="Заказы" />
+            android:title="@string/order" />
         <item
             android:id="@+id/delivery_address"
-            android:title="Адрес доставки" />
+            android:title="@string/delivery_address" />
         <item
             android:id="@+id/payment_method"
-            android:title="Способ оплаты" />
-        <item
-            android:id="@+id/notification"
-            android:title="Увеомление" />
-        <item
-            android:id="@+id/reference"
-            android:title="Справка" />
-        <item
-            android:id="@+id/about"
-            android:title="О нас" />
+            android:title="@string/payment" />
         <item
             android:id="@+id/settings"
-            android:title="Настройки" />
+            android:title="@string/settings" />
         <item
             android:id="@+id/exit"
-            android:title="Выход" />
+            android:title="@string/exit" />
     </group>
 </menu>
