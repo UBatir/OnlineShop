@@ -47,4 +47,6 @@
     <string name="about">О нас</string>
     <string name="settings">Настройки</string>
     <string name="exit">Выход</string>
+    <string name="select_type">Метод доставки</string>
+    <string name="total_cost">Общая сумма</string>
 </resources>

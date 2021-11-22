@@ -12,6 +12,7 @@
         <entry key="..\:/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/app_bar_main.xml" value="0.20102564102564102" />
         <entry key="..\:/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/dialog_bottom_sheet.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/fragment_basket.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/fragment_card.xml" value="0.22" />
         <entry key="..\:/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/fragment_detail.xml" value="0.22" />
@@ -26,6 +27,7 @@
         <entry key="..\:/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/item_favorite.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/item_product.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/nav_header_main.xml" value="0.13425925925925927" />
+        <entry key="..\:/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/radiobutton_list_item_1.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidStudioProjects/OnlineShop/app/src/main/res/menu-v26/activity_main_drawer.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidStudioProjects/OnlineShop/app/src/main/res/menu/activity_main_drawer.xml" value="0.20102564102564102" />
         <entry key="app/src/main/res/drawable/background_border.xml" value="0.19814814814814816" />
